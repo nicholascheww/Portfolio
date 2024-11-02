@@ -90,7 +90,7 @@ const INFO = {
 			jobTitle:"Part time retail sales associate",
 			description: "I helped out at the Philips Hue booth during the 2024 IT Show. Philips Hue is a smart lighting company that offers various products. During the event, my responsibilities included stock-taking, shelving products, and assisting customers with inquiries about Philips Hue products, as well as helping them through the checkout process. This experience allowed me to gain insight into the lighting industry and provided me with first hand experience in stock-taking.",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Philips_Hue_logo.svg/640px-Philips_Hue_logo.svg.png",
-			duration: "November 2022 - December 2023"
+			duration: "March 2024 - March 2024"
 		},
 	]
 };
