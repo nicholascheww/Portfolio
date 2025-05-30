@@ -86,11 +86,11 @@ const INFO = {
 			duration: "November 2022 - December 2023"
 		},
 		{
-			title: "Philips Hue",
-			jobTitle:"Part time retail sales associate",
-			description: "I helped out at the Philips Hue booth during the 2024 IT Show. Philips Hue is a smart lighting company that offers various products. During the event, my responsibilities included stock-taking, shelving products, and assisting customers with inquiries about Philips Hue products, as well as helping them through the checkout process. This experience allowed me to gain insight into the lighting industry and provided me with first hand experience in stock-taking.",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Philips_Hue_logo.svg/640px-Philips_Hue_logo.svg.png",
-			duration: "March 2024 - March 2024"
+			title: "Monetary Authority of Singapore",
+			jobTitle:"Intern",
+			description: "During this internship I worked under the Information Technology Department in the Enterprise Platform Divison in the Robotic Process Automation team. I learned valuable skills such as Blue Prism to automate processes in MAS.",
+			logo: "https://media.licdn.com/dms/image/v2/D560BAQE1brqQnxYscA/company-logo_200_200/company-logo_200_200/0/1680747615720/mas_logo?e=1753920000&v=beta&t=F1NOwSXzrwazlWtlf4p5aW3fKcKnml7Y1OiARXpOfYA",
+			duration: "April 2025 - Present"
 		},
 	]
 };
