@@ -4,6 +4,7 @@ const INFO = {
 		name: "Nicholas Chew",
 		email: "nicholaschew1916@gmail.com",
 		logo: "../logo.png",
+		initials: "NC"
 	},
 
 	socials: {

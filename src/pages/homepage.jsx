@@ -1,16 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import AllProjects from "../components/projects/allProjects";
 
 import "./styles/homepage.css";
 
 const Homepage = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
+	}, []);
+
+	// Fade-in on scroll for the about section
+	const aboutRef = useRef(null);
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("hp-about--visible");
+				}
+			},
+			{ threshold: 0.15 }
+		);
+		if (aboutRef.current) observer.observe(aboutRef.current);
+		return () => observer.disconnect();
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "home");
@@ -39,17 +53,15 @@ const Homepage = () => {
 					<ul className="hp-nav-links">
 						<li><Link to="/" className="active">Home</Link></li>
 						<li><Link to="/projects">Projects</Link></li>
-						<li><Link to="/about">About</Link></li>
+						<li><Link to="/works">Experience</Link></li>
 						<li><Link to="/contact">Contact</Link></li>
 					</ul>
 				</nav>
 
-				{/* ── Hero ── */}
+				{/* ── Hero — simple, original wording ── */}
 				<div className="hp-hero">
 					<div className="hp-hero-left">
-						<p className="hp-eyebrow">
-							{INFO.main.title}
-						</p>
+						<p className="hp-eyebrow">{INFO.main.title}</p>
 
 						<h1 className="hp-hero-title">
 							{INFO.homepage.title}
@@ -60,6 +72,9 @@ const Homepage = () => {
 						</p>
 
 						<div className="hp-socials">
+							<Link to="/projects" className="hp-cta-btn">
+								View my work →
+							</Link>
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -71,7 +86,6 @@ const Homepage = () => {
 								</svg>
 								GitHub
 							</a>
-
 							<a
 								href={INFO.socials.linkedin}
 								target="_blank"
@@ -85,7 +99,6 @@ const Homepage = () => {
 								</svg>
 								LinkedIn
 							</a>
-
 							<a
 								href={`mailto:${INFO.main.email}`}
 								className="hp-social-link"
@@ -108,24 +121,42 @@ const Homepage = () => {
 					</div>
 				</div>
 
-				{/* ── Projects ── */}
-				<section className="hp-projects">
-					<div className="hp-section-header">
-						<h2 className="hp-section-title">Selected work</h2>
-						<Link to="/projects" className="hp-section-link">
-							View all →
-						</Link>
+				{/* ── About — revealed on scroll ── */}
+				<div className="hp-about" ref={aboutRef}>
+					<div className="hp-about-image-wrap">
+						<img
+							src="about.jpg"
+							alt={INFO.main.name}
+							className="hp-about-img"
+						/>
 					</div>
 
-					<AllProjects />
-				</section>
+					<div className="hp-about-text">
+						<p className="hp-eyebrow">About</p>
+						<h2 className="hp-about-title">
+							{INFO.about.title}
+						</h2>
+						{INFO.about.description
+							.split("\n\n")
+							.filter(Boolean)
+							.map((para, i) => (
+								<p key={i} className="hp-about-para">
+									{para}
+								</p>
+							))}
+
+					</div>
+				</div>
 
 				{/* ── Footer ── */}
 				<footer className="hp-footer">
 					<span className="hp-footer-copy">
-						© {new Date().getFullYear()}
+						© {new Date().getFullYear()} {INFO.main.name}
 					</span>
-					<span className="hp-footer-name">{INFO.main.name}</span>
+					<div className="hp-footer-links">
+						<Link to="/projects" className="hp-footer-link">Projects</Link>
+						<Link to="/contact" className="hp-footer-link">Contact</Link>
+					</div>
 				</footer>
 			</div>
 		</React.Fragment>
