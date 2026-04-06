@@ -72,6 +72,13 @@ const INFO = {
 	],
 	works:[
 		{
+			title: "Monetary Authority of Singapore",
+			jobTitle:"Intern",
+			description: "During this internship I worked under the Information Technology Department in the Enterprise Platform Divison in the Robotic Process Automation team. I learned valuable skills such as Blue Prism to automate processes in MAS.",
+			logo: "https://media.licdn.com/dms/image/v2/D560BAQE1brqQnxYscA/company-logo_100_100/company-logo_100_100/0/1680747615720/mas_logo?e=1776902400&v=beta&t=9om6gd26exaCWu7IYNocZ5q6vRPiLW9O1XFcnXqFoXE",
+			duration: "April 2025 - Present"
+		},
+		{
 			title: "Aftershock PC",
 			jobTitle:"Part time retail sales associate",
 			description: "As a Sales Associate at Aftershock PC, I assist customers in selecting high-performance custom-built gaming and productivity systems tailored to their needs. My role involves guiding clients through the wide range of PC customization options, providing product knowledge, and ensuring a seamless and personalized shopping experience. By leveraging my technical expertise, I help customers make informed decisions, from choosing the right components to understanding performance benchmarks. I'm passionate about delivering top-tier customer service and contributing to Aftershock's reputation for quality and innovation.",
@@ -85,13 +92,6 @@ const INFO = {
 			description: "I helped out in assisting customers with queries about PRISM+ products. Some products that PRISM+ sell are TVs, Monitors, Soundbars, Air Conditioners, Ceiling Fans, Air Purifiers and Refrigerators. I was required to have knowledge about PRISM+ products and be able to answer any questions that customers may ask me about. Through this job, I was able to pick up skills such as customer service and working as a team as there is sales target for different stores.",
 			logo: "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/tampines-mall/tenants/Prism%2B%20Logo%20982x818px%20(1).png.transform/cap-midres/image.png",
 			duration: "November 2022 - December 2023"
-		},
-		{
-			title: "Monetary Authority of Singapore",
-			jobTitle:"Intern",
-			description: "During this internship I worked under the Information Technology Department in the Enterprise Platform Divison in the Robotic Process Automation team. I learned valuable skills such as Blue Prism to automate processes in MAS.",
-			logo: "https://media.licdn.com/dms/image/v2/D560BAQE1brqQnxYscA/company-logo_100_100/company-logo_100_100/0/1680747615720/mas_logo?e=1776902400&v=beta&t=9om6gd26exaCWu7IYNocZ5q6vRPiLW9O1XFcnXqFoXE",
-			duration: "April 2025 - Present"
 		},
 	]
 };
