@@ -64,6 +64,8 @@ const Projects = () => {
 						© {new Date().getFullYear()} {INFO.main.name}
 					</span>
 					<div className="pj-footer-links">
+						<Link to="/" className="pj-footer-link">Home</Link>
+						<Link to="/projects" className="pj-footer-link">Projects</Link>
 						<Link to="/works" className="pj-footer-link">Experience</Link>
 						<Link to="/contact" className="pj-footer-link">Contact</Link>
 					</div>
