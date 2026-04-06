@@ -1,72 +1,109 @@
-@import "../../../data/styles.css";
-
 .project {
-	mix-blend-mode: normal;
-	border-radius: 20px;
-	opacity: 0.8;
-	height: 100%;
+	height: 100% !important;
+	border-radius: 0 !important;
+	opacity: 1 !important;
+	mix-blend-mode: normal !important;
+	background: #fff !important;
+	transition: background 0.2s ease !important;
 }
 
 .project a {
-	text-decoration: none;
+	text-decoration: none !important;
+	display: block !important;
+	height: 100% !important;
 }
 
 .project:hover {
-	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+	background: #f9f9f7 !important;
 }
 
 .project:hover .project-link {
-	color: var(--link-color);
-	transition: color 0.3s ease-in-out;
+	color: #111 !important;
+	transition: color 0.2s ease !important;
 }
 
 .project-container {
-	padding: 30px;
+	padding: 2rem !important;
+	display: flex !important;
+	flex-direction: column !important;
+	height: 100% !important;
 }
 
+/* ── Logo tile ── */
 .project-logo {
-	width: 30px;
+	width: 52px !important;
+	height: 52px !important;
+	border-radius: 10px !important;
+	background: #f5f5f3 !important;
+	border: 0.5px solid rgba(0, 0, 0, 0.08) !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	overflow: hidden !important;
+	flex-shrink: 0 !important;
+	margin-bottom: 1.25rem !important;
 }
 
 .project-logo img {
-	width: 100%;
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: contain !important;
 }
 
+/* ── Title ── */
 .project-title {
-	font-family: var(--secondary-font);
-	color: var(--primary-color);
-	font-size: 16px;
-	padding-top: 15px;
-	margin-bottom: 1em;
-	font-weight: 700;
+	font-family: 'DM Serif Display', serif !important;
+	font-size: 18px !important;
+	font-weight: 400 !important;
+	color: #111 !important;
+	letter-spacing: -0.3px !important;
+	padding-top: 0 !important;
+	margin-bottom: 0.6rem !important;
 }
 
+/* ── Description — force 3 line clamp ── */
 .project-description {
-	color: var(--secondary-color);
+	font-family: 'DM Sans', sans-serif !important;
+	font-size: 13px !important;
+	font-weight: 300 !important;
+	line-height: 1.65 !important;
+	color: #777 !important;
+	display: -webkit-box !important;
+	-webkit-line-clamp: 3 !important;
+	-webkit-box-orient: vertical !important;
+	overflow: hidden !important;
+	max-height: calc(1.65em * 3) !important;
+	flex: 1 !important;
 }
 
+/* ── Link ── */
 .project-link {
-	display: flex;
-	align-items: center;
-	color: var(--secondary-color);
-	font-size: 12px;
-	padding-top: 20px;
+	display: flex !important;
+	align-items: center !important;
+	gap: 6px !important;
+	padding-top: 1.25rem !important;
+	font-family: 'DM Sans', sans-serif !important;
+	font-size: 11px !important;
+	letter-spacing: 0.08em !important;
+	text-transform: uppercase !important;
+	color: #bbb !important;
+	transition: color 0.2s ease !important;
 }
 
 .project-link-icon {
-	padding-left: 5px;
-	font-size: 13px;
+	font-size: 11px !important;
+	padding-left: 0 !important;
+	display: flex !important;
+	align-items: center !important;
 }
 
 .project-link-text {
-	padding-left: 20px;
-	font-weight: 700;
+	font-weight: 400 !important;
+	padding-left: 0 !important;
 }
 
 @media (max-width: 600px) {
-	.project {
-		height: 300px;
+	.project-container {
+		padding: 1.5rem !important;
 	}
 }

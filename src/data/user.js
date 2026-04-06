@@ -31,7 +31,7 @@ const INFO = {
 				"Verdex pioneers a solution to create personalized, sustainable itineraries, fostering community through a collaborative platform. Users can share plans and connect, enriching their travel experiences in Singapore. In this project, I developed a comprehensive admin portal that serves as a centralized hub for platform management. This portal provides admins with tools for real-time system health monitoring, user management (including information updates and forum bans), and generating performance reports. Additionally, admins can directly respond to customer inquiries submitted through the contact form. ",
 			logo: "https://raw.githubusercontent.com/Verdex-Project/Verdex/refs/heads/main/assets/logos/transparentLogoColour.png",
 			linkText: "View Project",
-			link: "https://verdex.app",
+			link: "https://verdex.prakhar.app",
 		},
 
 		{
@@ -40,7 +40,7 @@ const INFO = {
 				"In June 2024, I worked on MakanMatch, a web app built with Express.js and React to promote sustainability by reducing food waste and encouraging community bonding. Designed for use by community centers in Singapore, the platform allows residents to share meals, addressing the inefficiencies of single-person cooking. I developed the real-time messaging feature using Express WebSocket, allowing hosts and guests to chat once a meal reservation is made. Each reservation generates a unique chat history ID for storing and retrieving messages in a MySQL database. This feature includes options to send, edit, and delete messages, share images, reply to specific messages, and view online status, creating a smooth, interactive chat experience for users.",
 			logo: "https://avatars.githubusercontent.com/u/171593551?s=200&v=4",
 			linkText: "View Project",
-			link: "https://makanmatch.com",
+			link: "https://makanmatch.prakhar.app",
 		},
 
 		{
@@ -55,10 +55,10 @@ const INFO = {
 		{
 			title: "Recyclify",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"Recyclify is an AI-powered sustainable classroom management platform designed to boost student engagement in environmental efforts. It provides an intuitive, web-based system that encourages students to complete recycling tasks, earn rewards, and contribute to a greener future.",
+			logo: "https://avatars.githubusercontent.com/u/191305739?s=200&v=4",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/RecyclifyApp?view_as=public",
 		},
 
 		// {

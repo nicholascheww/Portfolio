@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
@@ -27,33 +25,49 @@ const Projects = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<link
+					href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+					rel="stylesheet"
+				/>
 			</Helmet>
 
-			<div className="page-content">
-				<NavBar active="projects" />
-				<div className="content-wrapper">
-					<div className="projects-logo-container">
-						<div className="projects-logo">
-							<Logo width={46} />
-						</div>
-					</div>
-					<div className="projects-container">
-						<div className="title projects-title">
-							Projects that I have done or contributed to
-						</div>
+			<div className="pj">
+				{/* ── Nav ── */}
+				<nav className="pj-nav">
+					<Link to="/" className="pj-nav-logo">
+						{INFO.main.initials ?? "YN"}
+					</Link>
+					<ul className="pj-nav-links">
+						<li><Link to="/">Home</Link></li>
+						<li><Link to="/projects" className="active">Projects</Link></li>
+						<li><Link to="/works">Experience</Link></li>
+						<li><Link to="/contact">Contact</Link></li>
+					</ul>
+				</nav>
 
-						<div className="subtitle projects-subtitle">
-							Throughout my studies at Nanyang Polytechnic, I have worked on various projects that have helped me to develop my skills in different programming languages as well as my problem-solving skills. Here are some of the projects that I have done or contributed to.
-						</div>
-
-						<div className="projects-list">
-							<AllProjects />
-						</div>
-					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+				{/* ── Page header ── */}
+				<div className="pj-header">
+					<h1 className="pj-title">Projects</h1>
+					<p className="pj-subtitle">
+						A collection of things I've built during my studies and beyond.
+					</p>
 				</div>
+
+				{/* ── Project list ── */}
+				<div className="pj-list">
+					<AllProjects />
+				</div>
+
+				{/* ── Footer ── */}
+				<footer className="pj-footer">
+					<span className="pj-footer-copy">
+						© {new Date().getFullYear()} {INFO.main.name}
+					</span>
+					<div className="pj-footer-links">
+						<Link to="/works" className="pj-footer-link">Experience</Link>
+						<Link to="/contact" className="pj-footer-link">Contact</Link>
+					</div>
+				</footer>
 			</div>
 		</React.Fragment>
 	);
