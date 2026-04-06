@@ -90,7 +90,7 @@ const INFO = {
 			title: "Monetary Authority of Singapore",
 			jobTitle:"Intern",
 			description: "During this internship I worked under the Information Technology Department in the Enterprise Platform Divison in the Robotic Process Automation team. I learned valuable skills such as Blue Prism to automate processes in MAS.",
-			logo: "https://media.licdn.com/dms/image/v2/D560BAQE1brqQnxYscA/company-logo_200_200/company-logo_200_200/0/1680747615720/mas_logo?e=1753920000&v=beta&t=F1NOwSXzrwazlWtlf4p5aW3fKcKnml7Y1OiARXpOfYA",
+			logo: "https://media.licdn.com/dms/image/v2/D560BAQE1brqQnxYscA/company-logo_100_100/company-logo_100_100/0/1680747615720/mas_logo?e=1776902400&v=beta&t=9om6gd26exaCWu7IYNocZ5q6vRPiLW9O1XFcnXqFoXE",
 			duration: "April 2025 - Present"
 		},
 	]
