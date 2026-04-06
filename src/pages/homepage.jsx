@@ -155,6 +155,7 @@ const Homepage = () => {
 					</span>
 					<div className="hp-footer-links">
 						<Link to="/projects" className="hp-footer-link">Projects</Link>
+						<Link to="/works" className="hp-footer-link">Experience</Link>
 						<Link to="/contact" className="hp-footer-link">Contact</Link>
 					</div>
 				</footer>
