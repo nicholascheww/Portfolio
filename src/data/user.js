@@ -12,9 +12,9 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Student at Nanyang Polytechnic studying Information Technology",
+		title: "Information Technology Graduate · Nanyang Polytechnic",
 		description:
-			"I am a student currently studying Information Technology at Nanyang Polytechnic. I am passionate about backend development as well as cloud computing. I am always looking for opportunities to learn and grow as a developer.",
+			"I am a grduate from Nanyang Polytechnic with a diploma in Information Technology. I am passionate about backend development as well as cloud computing. I am always looking for opportunities to learn and grow as a developer.",
 	},
 
 	about: {
@@ -51,14 +51,14 @@ const INFO = {
 			link: "https://github.com/nicholascheww/MushroomPocket",
 		},
 
-		// {
-		// 	title: "Project 4",
-		// 	description:
-		// 		"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-		// 	linkText: "View Project",
-		// 	link: "https://github.com",
-		// },
+		{
+			title: "Recyclify",
+			description:
+				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "View Project",
+			link: "https://github.com",
+		},
 
 		// {
 		// 	title: "Project 5",
