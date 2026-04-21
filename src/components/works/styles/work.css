@@ -1,18 +1,19 @@
 .work-item {
-	display: grid;
-	grid-template-columns: 72px 1fr;
-	gap: 2rem;
-	padding: 2.5rem 3rem;
-	transition: background 0.2s ease;
+  display: grid;
+  grid-template-columns: 87px 1fr;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+  transition: background 0.2s ease;
+  align-items: start;
+}
+
+.work-logo {
+  display: flex;
+  justify-content: flex-end; /* pushes logo to the right side of its column */
 }
 
 .work-item:hover {
 	background: #f9f9f7;
-}
-
-/* ── Logo ── */
-.work-logo {
-	padding-top: 4px;
 }
 
 .work-logo img {
